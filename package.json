@@ -1,0 +1,16 @@
+{
+  "name": "blog_app",
+  "version": "1.0.0",
+  "description": "app for users to post blogs",
+  "main": "index.js",
+  "scripts": {
+    "test": "start",
+    "start": "node index.js"
+  },
+  "author": "Vivek Rohtasvi",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2"
+  }
+}
