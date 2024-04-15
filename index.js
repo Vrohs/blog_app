@@ -2,7 +2,9 @@ const express = require('express');
 const app = express()
 const port = 3000
 
-
+app.use((req,res,next) => {
+    next()
+})
 app.use(express.static('.'))
 app.set("view engine", "ejs")
 
@@ -14,6 +16,16 @@ app.get('/', (req,res) => {
 app.get('/blog', (req,res) => {
 
     res.render('index')
+})
+
+app.get('/login', (req,res)=>{
+
+    res.render('login')
+})
+
+app.get('/signup', (req,res)=>{
+
+    res.render('signup')
 })
 
 
