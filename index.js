@@ -6,6 +6,10 @@ app.use((req,res,next) => {
     next()
 })
 app.use(express.static('.'))
+
+app.use(express.json())
+app.use(express.urlencoded({extended:true}))
+
 app.set("view engine", "ejs")
 
 
@@ -15,7 +19,7 @@ app.get('/', (req,res) => {
 
 app.get('/blog', (req,res) => {
 
-    res.render('index')
+    res.render('homepage')
 })
 
 app.get('/login', (req,res)=>{

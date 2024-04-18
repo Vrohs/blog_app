@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../public/styles/style.css">
 </head>
 <body>
-    
+    <div class="signup">
     <form action="">
 
-        <input type="text">Username <br>
-        <input type="password" name="pass" id="pwd"> Create a password <br>
+        <input type="text" name="username" id="username" placeholder="Username" required/> <br><br>
+        <input type="text" name="email" id="email" placeholder="Enter your email" required/> <br><br>   
+        <input type="password" name="pwd" id="pwd" placeholder="Create password" minlength="8" /> <br><br>
+        <button type="submit">Sign-Up</button>
+
+
+
     </form>
+    </div>
 </body>
 </html>
