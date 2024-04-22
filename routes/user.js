@@ -7,17 +7,21 @@ router.get("/", (req, res) => {
     res.send("visit /blog for the blog page");
   });
   
-  router.get("/blog", (req, res) => {
+
+router.get("/blog", (req, res) => {
     res.render("homepage");
   });
   
-  router.get("/login", (req, res) => {
+
+router.get("/login", (req, res) => {
     res.render("login");
   });
+
   
-  router.get("/signup", (req, res) => {
+router.get("/signup", (req, res) => {
     res.render("signup");
   });
 
 
-  module.exports = router;
+
+module.exports = router;
